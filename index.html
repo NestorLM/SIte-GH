@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GH Lavagens - Especialistas em limpeza e impermeabilização de estofados, automóveis e hidratação de couro.">
+    <title>GH Lavagens | Limpeza & Impermeabilização</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="GH Lavagens Logo">
+                <span class="logo-text">GH <span>Lavagens</span></span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="nav-link btn-whatsapp"><i class="fab fa-whatsapp"></i> Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <span class="hero-badge">✨ Qualidade que se vê</span>
+                <h1>Seus estofados como <span class="highlight">novos</span> novamente</h1>
+                <p>Especialistas em limpeza profissional de estofados, automotiva e hidratação de couro. Resultados que transformam.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de solicitar um orçamento." class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                    </a>
+                    <a href="#servicos" class="btn btn-secondary">
+                        <i class="fas fa-arrow-down"></i> Nossos Serviços
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="500">0</span>+
+                        <span class="stat-label">Clientes Satisfeitos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-rating">⭐ 5.0</span>
+                        <span class="stat-label">Avaliação Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in-delay">
+                <div class="hero-card">
+                    <div class="before-after">
+                        <div class="ba-item">
+                            <span class="ba-label antes">ANTES</span>
+                            <div class="ba-placeholder before-img">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                        </div>
+                        <div class="ba-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="ba-item">
+                            <span class="ba-label depois">DEPOIS</span>
+                            <div class="ba-placeholder after-img">
+                                <i class="fas fa-sparkles"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-container">
+                        <div class="about-icon-main">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="about-badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Profissionais Qualificados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2>Somos a <span class="highlight">GH Lavagens</span></h2>
+                    <p class="about-text">Somos uma empresa especializada em limpeza e impermeabilização de estofados, automóveis e hidratação de couro. Trabalhamos com produtos de alta qualidade para garantir resultados excepcionais.</p>
+                    <p class="about-text">Nosso compromisso é entregar não apenas limpeza, mas cuidado completo com seus itens, prolongando sua vida útil e mantendo a aparência de novo.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Produtos Premium</h4>
+                                <p>Utilizamos apenas produtos de alta qualidade</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Rapidez</h4>
+                                <p>Serviço eficiente sem perder a qualidade</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h4>Confiança</h4>
+                                <p>Garantia de satisfação em cada serviço</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">O que fazemos</span>
+                <h2>Nossos <span class="highlight">Serviços</span></h2>
+                <p>Soluções completas para limpeza e conservação dos seus estofados</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <div class="service-number">01</div>
+                    </div>
+                    <h3>Limpeza de Estofados</h3>
+                    <p>Limpeza profunda de sofás, colchões, cadeiras e qualquer estofado do seu ambiente. Removemos manchas, ácaros e odores.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Sofás e poltronas</li>
+                        <li><i class="fas fa-check"></i> Colchões</li>
+                        <li><i class="fas fa-check"></i> Cortinas</li>
+                        <li><i class="fas fa-check"></i> Estofados automotivos</li>
+                    </ul>
+                    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de saber mais sobre limpeza de estofados." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="service-number">02</div>
+                    </div>
+                    <h3>Limpeza Automotiva</h3>
+                    <p>Higienização completa do interior do seu veículo: bancos, teto, forro, tapetes e painel. Renove o ambiente do seu carro.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Bancos de tecido</li>
+                        <li><i class="fas fa-check"></i> Bancos de couro</li>
+                        <li><i class="fas fa-check"></i> Forro e teto</li>
+                        <li><i class="fas fa-check"></i> Portas e painéis</li>
+                    </ul>
+                    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de saber mais sobre limpeza automotiva." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="service-number">03</div>
+                    </div>
+                    <h3>Hidratação de Couro</h3>
+                    <p>Tratamento completo para couros ressecados. Devolvemos a maciez, brilho e vida aos seus itens de couro.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Sofás de couro</li>
+                        <li><i class="fas fa-check"></i> Bancos automotivos</li>
+                        <li><i class="fas fa-check"></i> Móveis de couro</li>
+                        <li><i class="fas fa-check"></i> Acessórios de couro</li>
+                    </ul>
+                    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de saber mais sobre hidratação de couro." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
+                </div>
+                
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-number">04</div>
+                    </div>
+                    <h3>Impermeabilização</h3>
+                    <p>Proteção duradoura contra líquidos e sujeira. Crie uma barreira invisível que impede a penetração de líquidos nos seus estofados.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Impermeabilização de tecidos</li>
+                        <li><i class="fas fa-check"></i> Proteção antimancha</li>
+                        <li><i class="fas fa-check"></i> Repelência a líquidos</li>
+                        <li><i class="fas fa-check"></i> Manutenção preventiva</li>
+                    </ul>
+                    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de saber mais sobre impermeabilização." class="btn btn-outline" target="_blank">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Nossos Trabalhos</span>
+                <h2>Antes e <span class="highlight">Depois</span></h2>
+                <p>Veja a transformação que fazemos nos seus estofados</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="before-after-card">
+                        <div class="ba-side before">
+                            <span class="ba-badge antes-badge">ANTES</span>
+                            <div class="ba-image-placeholder">
+                                <i class="fas fa-couch"></i>
+                                <span>Sofá manchado</span>
+                            </div>
+                        </div>
+                        <div class="ba-divider">
+                            <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="ba-side after">
+                            <span class="ba-badge depois-badge">DEPOIS</span>
+                            <div class="ba-image-placeholder after-placeholder">
+                                <i class="fas fa-sparkles"></i>
+                                <span>Limpo e renovado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal delay-1">
+                    <div class="before-after-card">
+                        <div class="ba-side before">
+                            <span class="ba-badge antes-badge">ANTES</span>
+                            <div class="ba-image-placeholder">
+                                <i class="fas fa-car"></i>
+                                <span>Banco sujo</span>
+                            </div>
+                        </div>
+                        <div class="ba-divider">
+                            <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="ba-side after">
+                            <span class="ba-badge depois-badge">DEPOIS</span>
+                            <div class="ba-image-placeholder after-placeholder">
+                                <i class="fas fa-star"></i>
+                                <span>Como novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal delay-2">
+                    <div class="before-after-card">
+                        <div class="ba-side before">
+                            <span class="ba-badge antes-badge">ANTES</span>
+                            <div class="ba-image-placeholder">
+                                <i class="fas fa-bed"></i>
+                                <span>Colchão sujo</span>
+                            </div>
+                        </div>
+                        <div class="ba-divider">
+                            <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <div class="ba-side after">
+                            <span class="ba-badge depois-badge">DEPOIS</span>
+                            <div class="ba-image-placeholder after-placeholder">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Higienizado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta reveal">
+                <p>Quer ver mais? Siga nosso Instagram para acompanhar todos os nossos trabalhos!</p>
+                <a href="https://instagram.com/ghlavagens" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-instagram"></i> @ghlavagens
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Depoimentos</span>
+                <h2>O que nossos <span class="highlight">clientes dizem</span></h2>
+                <p>A satisfação dos nossos clientes é nosso maior orgulho</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Meu sofá estava com várias manchas que eu já desisti. Chamei a GH Lavagens e ficou IMPECÁVEL! Super recomendo o serviço."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>M</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal delay-1">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Fiz a impermeabilização do sofá e a limpeza do carro. Resultados incríveis! Profissionais pontuais e atenciosos."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>J</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <span>Cliente desde 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card reveal delay-2">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A hidratação do meu sofá de couro ficou perfeita. Tinha rachaduras e ressecamento, agora está macio e com brilho de novo!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>A</span>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Oliveira</h4>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <span class="section-tag">Contato</span>
+                    <h2>Fale com a <span class="highlight">GH Lavagens</span></h2>
+                    <p>Estamos prontos para atender você! Entre em contato e solicite seu orçamento sem compromisso.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5511958300600" class="contact-method" target="_blank">
+                            <div class="method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <span>(11) 95830-0600</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/ghlavagens" class="contact-method" target="_blank">
+                            <div class="method-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Instagram</h4>
+                                <span>@ghlavagens</span>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:contato@ghlavagens.com.br" class="contact-method">
+                            <div class="method-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>E-mail</h4>
+                                <span>contato@ghlavagens.com.br</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Atendimento</h4>
+                                <p>Atendemos São Bernardo do Campo e região com atendimento domiciliar profissional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Solicite seu Orçamento</h3>
+                        
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nome completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 95830-0600" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service"><i class="fas fa-concierge-bell"></i> Serviço desejado</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="estofados">Limpeza de Estofados</option>
+                                <option value="automotiva">Limpeza Automotiva</option>
+                                <option value="couro">Hidratação de Couro</option>
+                                <option value="impermeabilizacao">Impermeabilização</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Descreva o que você precisa..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content reveal">
+                <i class="fas fa-phone-alt cta-icon"></i>
+                <h2>Pronto para renovar seus estofados?</h2>
+                <p>Solicite agora seu orçamento gratuito pelo WhatsApp!</p>
+                <a href="https://wa.me/5511958300600?text=Olá! Gostaria de solicitar um orçamento." class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="logo.svg" alt="GH Lavagens" width="50" height="50">
+                        <span>GH <span>Lavagens</span></span>
+                    </a>
+                    <p>Especialistas em limpeza e impermeabilização de estofados, automotiva e hidratação de couro.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/ghlavagens" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5511958300600" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:contato@ghlavagens.com.br" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Limpeza de Estofados</a></li>
+                        <li><a href="#servicos">Limpeza Automotiva</a></li>
+                        <li><a href="#servicos">Hidratação de Couro</a></li>
+                        <li><a href="#servicos">Impermeabilização</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> (11) 95830-0600</li>
+                        <li><i class="fab fa-instagram"></i> @ghlavagens</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Bernardo do Campo - SP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GH Lavagens. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5511958300600?text=Olá! Gostaria de solicitar um orçamento." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão voltar ao topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
