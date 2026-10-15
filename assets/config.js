@@ -72,24 +72,3 @@ function getWhatsAppLink(serviceKey, customMessage) {
   }
   return `https://wa.me/${CONFIG.whatsapp.number}?text=${encodeURIComponent(message)}`;
 }
-
-function getContactWhatsApp(name, phone, service, message) {
-  const serviceNameMap = {
-    'estofados': 'higienização de estofados',
-    'impermeabilizacao': 'impermeabilização de estofados',
-    'colchao': 'higienização de colchão',
-    'poltrona': 'higienização de poltrona',
-    'cadeira': 'higienização de cadeiras',
-    'outro': 'orçamento'
-  };
-
-  let text = `Olá! Meu nome é *${name}*.%0A`;
-  text += `%0A📱 Telefone: ${phone}%0A`;
-  text += `🔧 Serviço: ${serviceNameMap[service] || service}%0A`;
-
-  if (message) {
-    text += `%0A💬 Mensagem:%0A${message}`;
-  }
-
-  return `https://wa.me/${CONFIG.whatsapp.number}?text=${text}`;
-}
