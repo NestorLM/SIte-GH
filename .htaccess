@@ -1,0 +1,78 @@
+# GH Lavagens - Configuração de Otimização e Segurança
+# Para servidores Apache
+
+# ============================================
+# FORÇAR HTTPS
+# ============================================
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ============================================
+# COMPRESSION - OTIMIZAR CARREGAMENTO
+# ============================================
+<IfModule mod_deflate.c>
+    # Comprimir HTML, CSS, JavaScript, XML, TXT e SVG
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
+    
+    # Comprimir imagens (se suportado)
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ============================================
+# CACHE - OTIMIZAR PERFORMANCE
+# ============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ============================================
+# SECURITY HEADERS
+# ============================================
+<IfModule mod_headers.c>
+    # Prevenir clickjacking
+    Header always set X-Frame-Options "DENY"
+    
+    # Prevenir MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src https://fonts.gstatic.com; connect-src 'self' https://wa.me https://www.instagram.com;"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions Policy
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ============================================
+# REDIRECIONAMENTOS OTIMIZADOS
+# ============================================
+# Redirecionar www para não-www (ou vice-versa)
+# RewriteCond %{HTTP_HOST} ^www\.ghlavagens\.com\.br [NC]
+# RewriteRule ^(.*)$ https://ghlavagens.com.br/$1 [R=301,L]
+
+# ============================================
+# CUSTOM ERROR PAGES
+# ============================================
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# ============================================
+# PREVENT DIRECTORY BROWSING
+# ============================================
+Options -Indexes

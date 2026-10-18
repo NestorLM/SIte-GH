@@ -1,0 +1,35 @@
+# Robots.txt para GH Lavagens
+# Otimizado para indexação máxima no Google
+
+User-agent: *
+Allow: /
+
+# Permitir rastreamento de todos os bots
+Allow: /
+Allow: /assets/
+Allow: /assets/img/
+Allow: /assets/css/
+Allow: /assets/js/
+
+# Sitemap location
+Sitemap: https://ghlavagens.com.br/sitemap.xml
+
+# Diretrizes específicas para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Diretrizes específicas para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Bloquear bots maliciosos (opcional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Tempo de crawl recomendado
+Crawl-delay: 1
