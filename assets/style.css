@@ -793,6 +793,14 @@ img { max-width: 100%; height: auto; display: block; }
     border-color: rgba(30,136,229,0.3);
 }
 
+/* Ajuste para imagens de antes/depois em uma só foto */
+.before-after-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .ba-side {
     position: relative;
     overflow: hidden;
@@ -818,32 +826,10 @@ img { max-width: 100%; height: auto; display: block; }
     transform: scale(1.05);
 }
 
-.ba-badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    padding: 4px 14px;
-    border-radius: var(--radius-xl);
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: white;
-    z-index: 2;
-    backdrop-filter: blur(4px);
+/* Ocultar badges e divisores */
+.ba-badge, .antes-badge, .depois-badge, .ba-divider, .arrow-icon {
+    display: none !important;
 }
-
-.antes-badge { background: rgba(180,60,60,0.85); }
-.depois-badge { background: rgba(45,160,80,0.85); }
-
-.ba-divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--gray-100), transparent);
-}
-
-.arrow-icon { color: var(--blue-turquoise); font-size: 0.85rem; }
 
 /* Nota da galeria */
 .gallery-note {
